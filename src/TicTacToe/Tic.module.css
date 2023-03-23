@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&family=Nanum+Gothic&family=Rajdhani:wght@300&family=Signika+Negative&family=Tilt+Neon&display=swap');
+
+@media (min-width:514px) {
+    .names {
+        font-size: 20px;
+    }
+
+    .names [type=text] {
+        font-size: 18px;
+        padding: 6px;
+    }
+
+    .ground {
+        display: grid;
+        grid-template-rows: repeat(3, 130px);
+        grid-template-columns: repeat(3, 130px);
+    }
+
+    .result {
+        margin-top: 30px;
+        font-size: 35px;
+    }
+
+    .ground li {
+        font-size: 130px;
+    }
+}
+
+@media (max-width:514px) {
+    .ground li {
+        font-size: 100px;
+    }
+
+    .result {
+        margin-top: 30px;
+        font-size: 25px;
+    }
+
+    .names {
+        font-size: 25px;
+    }
+
+    .names [type=text] {
+        font-size: 13px;
+        padding: 6px;
+    }
+
+    .ground {
+        display: grid;
+        grid-template-rows: repeat(3, 100px);
+        grid-template-columns: repeat(3, 100px);
+    }
+}
+
+
+body {
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(66 180 255 / 27%);
+    font-family: 'Tilt Neon', cursive;
+}
+
+.Heading {
+    box-sizing: border-box;
+    background: linear-gradient(to right, rgb(193 193 193), #4677e2);
+    color: white;
+    border-radius: 40px;
+    padding: 20px;
+    font-family: 'Signika Negative', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 30px auto 0px auto;
+    width: 70%;
+}
+
+.data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.btnH {
+    cursor: pointer;
+    font-family: 'Signika Negative', sans-serif;
+    border-radius: 20px;
+    font-size: 25px;
+}
+
+.btnH a {
+    padding: 7px;
+    text-decoration: none;
+    color: black;
+    height: 40px;
+
+}
+
+.btnH:active {
+    color: white;
+    background-color: black;
+}
+
+.btnH:hover {
+    background-color: gray;
+}
+
+.btnH a:active {
+    color: white;
+}
+
+
+.aboutsdata {
+    display: flex;
+    justify-content: center;
+}
+
+.aboutsdata ul {
+    display: flex;
+    justify-content: center;
+    opacity: 0.8;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    width: 50%;
+    margin: 20px;
+    padding: 20px;
+    text-align: justify;
+    position: absolute;
+    left: 20%;
+}
+
+.aboutsdata ul li {
+    margin: 15px auto;
+}
+
+ul button {
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 16px;
+    padding: 10px 18px;
+}
+
+ul button:active {
+    background-color: black;
+    color: white;
+    outline: none;
+}
+
+.outground {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ground li {
+    border: 2px solid black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    height: 130px;
+}
+
+.names {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.names :focus {
+    outline: none;
+    background: linear-gradient(45deg, #695fff59, transparent);
+    box-shadow: 0px 1px 20px 4px #5b5e89;
+}
+
+.names [type=text] {
+    border-radius: 12px;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: none;
+}
+
+.addbtn {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.add {
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 25px;
+}
+
+.add:active {
+    background-color: black;
+    color: white;
+}
+
+.restart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.restart button {
+    width: 150px;
+}
+
+.restart h1 {
+    margin: 10px 0px 5px 0px;
+    font-size: 50px;
+}
